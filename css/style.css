@@ -1,0 +1,110 @@
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+   -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  background-color: lightblue;  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+  color: orange;
+
+}
+
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 8px 5px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.5em;
+  width: 30vw;
+  height: auto;
+}
+
+.btn1 {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: orange;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 50px;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: orange;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease; 
+}
+
+.btn:hover {
+  animation: bounce 1s;
+}
+
+footer  {
+  width: 100%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  opacity: 100%; 
+} 
+
+.text-rodape {
+  color: white; 
+}
+
+.background{ 
+    background-image: url("../img/cripto.jpg");                
+    background-repeat: no-repeat;    
+
+}
+
+.invisivel{
+  display: none;
+}
